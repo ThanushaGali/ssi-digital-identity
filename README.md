@@ -1,53 +1,48 @@
-## ⚙️ Installation & Setup
+🔐 SSI Digital Identity – Blockchain Based Self-Sovereign Identity System
 
-### Clone the repository
+SSI Digital Identity is a decentralized identity management platform built on blockchain technology.
+It enables users to own, manage, and share verifiable credentials securely without relying on centralized authorities.
 
-```bash
-git clone https://github.com/ThanushaGali/ssi-digital-identity.git
-cd ssi-digital-identity
-```
+The system ensures privacy, tamper-proof verification, and selective disclosure across identity verification workflows.
 
----
+🔄 How It Works
 
-## 🖥 Frontend Setup
+1. User creates a DID (Decentralized Identifier)
+2. Issuer verifies identity and signs a credential
+3. Credential is stored in user wallet (off-chain)
+4. Credential hash is stored on blockchain
+5. Verifier validates:
+   - Digital signature
+   - Public key from DID registry
+   - Revocation status
 
-```bash
-cd frontend
-npm install
-npm run dev
-```
+🚀 Key Features
 
----
+Decentralized Identifier (DID) implementation
+Verifiable Credential issuance
+Blockchain-based credential hash storage
+Revocation registry on-chain
+Digital signature verification
+Selective disclosure (Prove attribute without revealing full data)
+MetaMask wallet integration
+Transparent and tamper-proof verification
 
-## ⛓ Blockchain Setup (Ganache + MetaMask)
+🛠️ Tech Stack
 
-This project uses:
+Blockchain: Ethereum (Ganache – Local Blockchain)
+Smart Contracts: Solidity
+Deployment Tool: Remix IDE
+Wallet Integration: MetaMask
+Frontend: React + Vite + TypeScript
+Cryptography: Public-Private Key Signatures
+Storage Model:
+On-chain → DID registry, credential hash, revocation status
+Off-chain → Verifiable credentials (wallet storage)
 
-- Ganache (Local Ethereum Blockchain)
-- MetaMask (Wallet Integration)
-- Solidity Smart Contracts
+🔄 System Architecture Overview
 
-### Step 1: Start Ganache
-- Open Ganache
-- Create a new workspace
-- Note down:
-  - RPC URL (usually http://127.0.0.1:7545)
-  - Network ID
-  - Test accounts
+Identity Holder – Controls wallet and credentials
+Issuer – Issues digitally signed credentials
+Verifier – Validates credential authenticity
+Blockchain Layer – Stores public keys, credential hashes, revocation registry
 
-### Step 2: Connect MetaMask to Ganache
-- Add a new custom network in MetaMask:
-  - RPC URL: http://127.0.0.1:7545
-  - Chain ID: 1337 (or shown in Ganache)
-- Import a Ganache account using its private key
-
-### Step 3: Deploy Smart Contract
-- Compile and deploy contract using Remix IDE
-- Connect Remix to:
-  - Injected Provider - MetaMask
-- Deploy to Ganache network
-- Copy deployed contract address
-
-### Step 4: Connect Frontend
-- Add contract address & ABI inside frontend
-- Interact using ethers.js or web3.js
