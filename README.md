@@ -24,50 +24,51 @@ https://drive.google.com/file/d/14ty0T4aFj59l5GBcfcnC_0ttHOa3qR2y/view?usp=drive
 
 🚀 Key Features
 
-Decentralized Identifier (DID) implementation
+- Decentralized Identifier (DID) implementation
 
-Verifiable Credential issuance
+- Verifiable Credential issuance
 
-Blockchain-based credential hash storage
+- Blockchain-based credential hash storage
 
-Revocation registry on-chain
+- Revocation registry on-chain
 
-Digital signature verification
+- Digital signature verification
 
-Selective disclosure (Prove attribute without revealing full data)
+- Selective disclosure (Prove attribute without revealing full data)
 
-MetaMask wallet integration
+- MetaMask wallet integration
 
-Transparent and tamper-proof verification
+- Transparent and tamper-proof verification
 
 🛠️ Tech Stack
 
-Blockchain: Ethereum (Ganache – Local Blockchain)
+- Blockchain: Ethereum (Ganache – Local Blockchain)
 
-Smart Contracts: Solidity
+- Smart Contracts: Solidity
 
-Deployment Tool: Remix IDE
+- Deployment Tool: Remix IDE
 
-Wallet Integration: MetaMask
+- Wallet Integration: MetaMask
 
-Frontend: React + Vite + TypeScript
+- Frontend: React + Vite + TypeScript
 
-Cryptography: Public-Private Key Signatures
+- Cryptography: Public-Private Key Signatures
 
 Storage Model:
-On-chain → DID registry, credential hash, revocation status
+- On-chain → DID registry, credential hash, revocation status
 
-Off-chain → Verifiable credentials (wallet storage)
+- Off-chain → Verifiable credentials (wallet storage)
 
 🔄 System Architecture Overview
 
-Identity Holder – Controls wallet and credentials
+-Identity Holder – Controls wallet and credentials
 
-Issuer – Issues digitally signed credentials
+-Issuer – Issues digitally signed credentials
 
-Verifier – Validates credential authenticity
+- Verifier – Validates credential authenticity
 
-Blockchain Layer – Stores public keys, credential hashes, revocation registry
+- Blockchain Layer – Stores public keys, credential hashes, revocation registry
+
 
 
 
