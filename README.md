@@ -19,12 +19,19 @@ The system ensures privacy, tamper-proof verification, and selective disclosure 
 🚀 Key Features
 
 Decentralized Identifier (DID) implementation
+
 Verifiable Credential issuance
+
 Blockchain-based credential hash storage
+
 Revocation registry on-chain
+
 Digital signature verification
+
 Selective disclosure (Prove attribute without revealing full data)
+
 MetaMask wallet integration
+
 Transparent and tamper-proof verification
 
 🛠️ Tech Stack
@@ -45,4 +52,5 @@ Identity Holder – Controls wallet and credentials
 Issuer – Issues digitally signed credentials
 Verifier – Validates credential authenticity
 Blockchain Layer – Stores public keys, credential hashes, revocation registry
+
 
